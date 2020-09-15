@@ -37,6 +37,7 @@
     "prettier": "^2.0.5",
     "sockjs-client": "^1.5.0",
     "swiper": "^5.4.5",
+    "v-calendar": "^1.0.8",
     "vue-awesome-swiper": "^4.1.1",
     "websocket": "^1.0.31",
     "webstomp-client": "^1.2.6"
