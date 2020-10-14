@@ -11,19 +11,19 @@
         </figure>
         <ul class="header__innner__nav_area">
           <li class="header__inner__link">
-            <router-link to="/">ABOUT</router-link>
+            <router-link to="/about">ABOUT</router-link>
           </li>
           <li class="header__inner__link">
             <router-link to="/schedule">SCHEDULE</router-link>
           </li>
           <li class="header__inner__link">
-            <router-link to="/cash-game">ARCHIVE</router-link>
+            <router-link to="/archive">ARCHIVE</router-link>
           </li>
           <li class="header__inner__link">
-            <router-link to="/payment-system">MUSIC</router-link>
+            <router-link to="/music">MUSIC</router-link>
           </li>
           <li class="header__inner__link">
-            <router-link to="/access">ARITIST</router-link>
+            <router-link to="/artist">ARITIST</router-link>
           </li>
         </ul>
         <ul class="header__inner__login-area">
@@ -38,20 +38,18 @@
 <script>
 export default {
   name: "layout-header",
-  props: {
-    title: {
-      type: String,
-      default: ""
-    }
-  }
 };
 </script>
 
 <style lang="css" scoped>
 .header {
-  height: 60px;
-  padding: 10px 0;
-  background: #111;
+    height: 60px;
+    padding: 10px 0;
+    background: #111;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
 }
 
 .header a{
@@ -90,8 +88,9 @@ export default {
   text-decoration: none;
 }
 
-.header__innner__nav_area .header__inner__link:hover {
-color:#f58b37;
-transition: 0.25s;
+.header__inner__nav_area .header__inner__link:hover {
+  color:#f58b37;
 }
+
+
 </style>

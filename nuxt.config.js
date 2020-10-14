@@ -50,11 +50,13 @@ export default {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: [],
+  buildModules: [
+    ['@nuxtjs/moment', ['ja']],
+  ],
   /*
    ** Nuxt.js modules
    */
-  modules: ["nuxt-fontawesome"],
+  modules: ["nuxt-fontawesome",'@nuxt/http',],
   fontawesome: {
     imports: [
       {
