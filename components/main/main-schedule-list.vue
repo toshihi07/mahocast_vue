@@ -1,5 +1,5 @@
 <template>
-  <div class="main__schedule__slider__wrapper">
+  <div class="main__slider__wrapper">
     <swiper :options="swiperOption">
       <main-schedule-article
         v-for="(value, key) in mainSchedule"
@@ -7,8 +7,8 @@
         v-bind:schedule="value"
       />
     </swiper>
-      <div class="swiper-button-prev" id="partner-swiper-button-prev"></div>
-      <div class="swiper-button-next" id="partner-swiper-button-next"></div>
+      <div class="swiper-button-prev" id="schedule-swiper-button-prev"></div>
+      <div class="swiper-button-next" id="schedule-swiper-button-next"></div>
   </div>
 </template>
 
@@ -25,15 +25,10 @@ export default {
       swiperOption: {
         slidesPerView: 3,
         spaceBetween: 20,
-        autoplay: {
-          //スライドの自動切り替え
-          delay: 5000, //スライドの自動切り替えの秒数
-          disableOnInteraction: false, //何らかのアクション後の自動切り替えを再開
-        },
         navigation: {
           //ナビゲーション設定
-          nextEl: "#partner-swiper-button-next",
-          prevEl: "#partner-swiper-button-prev",
+          nextEl: "#schedule-swiper-button-next",
+          prevEl: "#schedule-swiper-button-prev",
         },
       },
     };

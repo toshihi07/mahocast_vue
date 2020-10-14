@@ -54,24 +54,6 @@ export default {
   layout: "ore",
   data() {
     return {
-      swiperOption: {
-        loop: true, //無限ループ
-        autoplay: {
-          //スライドの自動切り替え
-          delay: 5000, //スライドの自動切り替えの秒数
-          disableOnInteraction: false, //何らかのアクション後の自動切り替えを再開
-        },
-        pagination: {
-          //ページネーション設定
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          //ナビゲーション設定
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      },
       title_schedule: "BROADCAST SCHEDULE",
       title_channel: "MAHOTV CHANNEL",
       title_archive: "ARCHIVE",

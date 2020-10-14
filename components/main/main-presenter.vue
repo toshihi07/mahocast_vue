@@ -3,8 +3,8 @@
     <swiper-slide class="main-presenter" v-for="(mainPresenter,index) in mainPresenters" :key="index">
       <img v-bind:src="mainPresenter.image_url"
     /></swiper-slide>
-    <div class="swiper-button-prev pc-prev" slot="button-prev"></div>
-    <div class="swiper-button-next pc-next" slot="button-next"></div>
+    <div class="swiper-button-prev pc-prev" slot="button-prev" id="presenter-concert-swiper-button-prev"></div>
+    <div class="swiper-button-next pc-next" slot="button-next" id="presenter-concert-swiper-button-next"></div>
   </swiper>
 </template>
 
@@ -22,8 +22,8 @@ export default {
         slidesPerView: 1,
         navigation: {
           //ナビゲーション設定
-          nextEl: "#partner-swiper-button-next",
-          prevEl: "#partner-swiper-button-prev",
+          nextEl: "#presenter-concert-swiper-button-next",
+          prevEl: "#presenter-concert-swiper-button-prev",
         },
       },
     };

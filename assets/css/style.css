@@ -101,8 +101,23 @@ img {
 }
 
 /* //swiper */
+.main__slider__wrapper {
+  position: relative;
+}
+
 .swiper-button-prev, .swiper-button-next{
     color: #c5c5c5 !important;
     font-size: xx-large !important;
     z-index: 10 !important;
+}
+
+.swiper-button-prev {
+  position: absolute;
+  left: -35px !important;
+  right: auto !important;
+}
+.swiper-button-next {
+  position: absolute;
+  left: auto !important;
+  right: -30px !important;
 }
